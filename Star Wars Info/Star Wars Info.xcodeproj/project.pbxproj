@@ -128,11 +128,15 @@
 			isa = PBXGroup;
 			children = (
 				519E7BD821BB55D9002518EB /* AppDelegate.swift */,
+				519E7C0E21BBAA2C002518EB /* Assets */,
+				519E7C0621BBA918002518EB /* Coordinator */,
+				519E7C0C21BBA9AB002518EB /* Controllers */,
+				519E7C0721BBA92B002518EB /* Extensions */,
+				519E7C0821BBA939002518EB /* Protocols */,
+				519E7C0B21BBA97B002518EB /* Model */,
+				519E7C0A21BBA96E002518EB /* View */,
+				519E7C0921BBA943002518EB /* View Models */,
 				519E7BDA21BB55D9002518EB /* ViewController.swift */,
-				519E7BDC21BB55D9002518EB /* Main.storyboard */,
-				519E7BDF21BB55DB002518EB /* Assets.xcassets */,
-				519E7BE121BB55DB002518EB /* LaunchScreen.storyboard */,
-				519E7BE421BB55DB002518EB /* Info.plist */,
 			);
 			path = "Star Wars Info";
 			sourceTree = "<group>";
@@ -153,6 +157,74 @@
 				519E7BFA21BB55DB002518EB /* Info.plist */,
 			);
 			path = "Star Wars InfoUITests";
+			sourceTree = "<group>";
+		};
+		519E7C0621BBA918002518EB /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		519E7C0721BBA92B002518EB /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		519E7C0821BBA939002518EB /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		519E7C0921BBA943002518EB /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
+		519E7C0A21BBA96E002518EB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				519E7C0D21BBA9B9002518EB /* Cells */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		519E7C0B21BBA97B002518EB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		519E7C0C21BBA9AB002518EB /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		519E7C0D21BBA9B9002518EB /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		519E7C0E21BBAA2C002518EB /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				519E7BDC21BB55D9002518EB /* Main.storyboard */,
+				519E7BDF21BB55DB002518EB /* Assets.xcassets */,
+				519E7BE121BB55DB002518EB /* LaunchScreen.storyboard */,
+				519E7BE421BB55DB002518EB /* Info.plist */,
+			);
+			path = Assets;
 			sourceTree = "<group>";
 		};
 		EEE607B3A4C2CCE0CE240E97 /* Frameworks */ = {
@@ -625,7 +697,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Q54HXSJPYH;
-				INFOPLIST_FILE = "Star Wars Info/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Star Wars Info/Assets/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -644,7 +716,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Q54HXSJPYH;
-				INFOPLIST_FILE = "Star Wars Info/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Star Wars Info/Assets/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

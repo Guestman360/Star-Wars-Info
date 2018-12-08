@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		0503C06911C92F711A475AB4 /* Pods_Star_Wars_Info.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D58AAB52F66C007259A19C7 /* Pods_Star_Wars_Info.framework */; };
 		065EC4742160A4F9442C1B97 /* Pods_Star_Wars_InfoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F59CC612EE16FA092DEA8B0 /* Pods_Star_Wars_InfoTests.framework */; };
+		5115240C21BC72D900FDC466 /* StarWarsApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5115240B21BC72D900FDC466 /* StarWarsApi.swift */; };
+		5115240F21BC87E300FDC466 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5115240E21BC87E300FDC466 /* Constants.swift */; };
 		519E7BD921BB55D9002518EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 519E7BD821BB55D9002518EB /* AppDelegate.swift */; };
 		519E7BDB21BB55D9002518EB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 519E7BDA21BB55D9002518EB /* ViewController.swift */; };
 		519E7BDE21BB55D9002518EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 519E7BDC21BB55D9002518EB /* Main.storyboard */; };
@@ -39,6 +41,8 @@
 /* Begin PBXFileReference section */
 		2D58AAB52F66C007259A19C7 /* Pods_Star_Wars_Info.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Star_Wars_Info.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F59CC612EE16FA092DEA8B0 /* Pods_Star_Wars_InfoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Star_Wars_InfoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5115240B21BC72D900FDC466 /* StarWarsApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarsApi.swift; sourceTree = "<group>"; };
+		5115240E21BC87E300FDC466 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		519E7BD521BB55D9002518EB /* Star Wars Info.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Star Wars Info.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		519E7BD821BB55D9002518EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		519E7BDA21BB55D9002518EB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -102,6 +106,22 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		5115240A21BC723D00FDC466 /* Api */ = {
+			isa = PBXGroup;
+			children = (
+				5115240B21BC72D900FDC466 /* StarWarsApi.swift */,
+			);
+			path = Api;
+			sourceTree = "<group>";
+		};
+		5115240D21BC87AD00FDC466 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				5115240E21BC87E300FDC466 /* Constants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
 		519E7BCC21BB55D8002518EB = {
 			isa = PBXGroup;
 			children = (
@@ -128,11 +148,12 @@
 			isa = PBXGroup;
 			children = (
 				519E7BD821BB55D9002518EB /* AppDelegate.swift */,
+				5115240A21BC723D00FDC466 /* Api */,
 				519E7C0E21BBAA2C002518EB /* Assets */,
 				519E7C0621BBA918002518EB /* Coordinator */,
 				519E7C0C21BBA9AB002518EB /* Controllers */,
+				5115240D21BC87AD00FDC466 /* Constants */,
 				519E7C0721BBA92B002518EB /* Extensions */,
-				519E7C0821BBA939002518EB /* Protocols */,
 				519E7C0B21BBA97B002518EB /* Model */,
 				519E7C0A21BBA96E002518EB /* View */,
 				519E7C0921BBA943002518EB /* View Models */,
@@ -171,13 +192,6 @@
 			children = (
 			);
 			path = Extensions;
-			sourceTree = "<group>";
-		};
-		519E7C0821BBA939002518EB /* Protocols */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Protocols;
 			sourceTree = "<group>";
 		};
 		519E7C0921BBA943002518EB /* View Models */ = {
@@ -518,8 +532,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5115240C21BC72D900FDC466 /* StarWarsApi.swift in Sources */,
 				519E7BDB21BB55D9002518EB /* ViewController.swift in Sources */,
 				519E7BD921BB55D9002518EB /* AppDelegate.swift in Sources */,
+				5115240F21BC87E300FDC466 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

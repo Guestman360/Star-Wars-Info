@@ -6,11 +6,24 @@ target 'Star Wars Info' do
   use_frameworks!
 
   # Pods for Star Wars Info
+  pod 'Alamofire'
   pod 'RealmSwift'
+  pod 'RxRealm'
+  pod 'RxSwift'
+  pod 'RxCocoa'
+  pod 'Unbox'
+  pod 'Then'
+  pod 'Reachability'
+  pod 'Kingfisher'
+  pod 'RxRealmDataSources'
+  pod 'Action'
+  pod 'NSObject+Rx'
 
   target 'Star Wars InfoTests' do
     inherit! :search_paths
     # Pods for testing
+    pod 'RxTest'
+    pod 'RxBlocking'
   end
 
   target 'Star Wars InfoUITests' do

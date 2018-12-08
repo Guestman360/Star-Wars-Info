@@ -17,6 +17,12 @@
 		5115241721BC8F2C00FDC466 /* FavoritesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5115241621BC8F2C00FDC466 /* FavoritesListViewController.swift */; };
 		5115241921BC8F5900FDC466 /* FavoritesDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5115241821BC8F5900FDC466 /* FavoritesDetailViewController.swift */; };
 		5115241B21BC8F6B00FDC466 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5115241A21BC8F6B00FDC466 /* SettingsViewController.swift */; };
+		5115241D21BC8FF500FDC466 /* InfoResourceChoiceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5115241C21BC8FF500FDC466 /* InfoResourceChoiceViewModel.swift */; };
+		5115241F21BC900A00FDC466 /* InfoResourceListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5115241E21BC900A00FDC466 /* InfoResourceListViewModel.swift */; };
+		5115242121BC901D00FDC466 /* InfoResourceDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5115242021BC901D00FDC466 /* InfoResourceDetailViewModel.swift */; };
+		5115242321BC903C00FDC466 /* FavoritesListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5115242221BC903C00FDC466 /* FavoritesListViewModel.swift */; };
+		5115242521BC905100FDC466 /* FavoritesDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5115242421BC905100FDC466 /* FavoritesDetailViewModel.swift */; };
+		5115242721BC906500FDC466 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5115242621BC906500FDC466 /* SettingsViewModel.swift */; };
 		519E7BD921BB55D9002518EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 519E7BD821BB55D9002518EB /* AppDelegate.swift */; };
 		519E7BDB21BB55D9002518EB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 519E7BDA21BB55D9002518EB /* ViewController.swift */; };
 		519E7BDE21BB55D9002518EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 519E7BDC21BB55D9002518EB /* Main.storyboard */; };
@@ -55,6 +61,12 @@
 		5115241621BC8F2C00FDC466 /* FavoritesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesListViewController.swift; sourceTree = "<group>"; };
 		5115241821BC8F5900FDC466 /* FavoritesDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesDetailViewController.swift; sourceTree = "<group>"; };
 		5115241A21BC8F6B00FDC466 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		5115241C21BC8FF500FDC466 /* InfoResourceChoiceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoResourceChoiceViewModel.swift; sourceTree = "<group>"; };
+		5115241E21BC900A00FDC466 /* InfoResourceListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoResourceListViewModel.swift; sourceTree = "<group>"; };
+		5115242021BC901D00FDC466 /* InfoResourceDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoResourceDetailViewModel.swift; sourceTree = "<group>"; };
+		5115242221BC903C00FDC466 /* FavoritesListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesListViewModel.swift; sourceTree = "<group>"; };
+		5115242421BC905100FDC466 /* FavoritesDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesDetailViewModel.swift; sourceTree = "<group>"; };
+		5115242621BC906500FDC466 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
 		519E7BD521BB55D9002518EB /* Star Wars Info.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Star Wars Info.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		519E7BD821BB55D9002518EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		519E7BDA21BB55D9002518EB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -209,6 +221,12 @@
 		519E7C0921BBA943002518EB /* View Models */ = {
 			isa = PBXGroup;
 			children = (
+				5115241C21BC8FF500FDC466 /* InfoResourceChoiceViewModel.swift */,
+				5115241E21BC900A00FDC466 /* InfoResourceListViewModel.swift */,
+				5115242021BC901D00FDC466 /* InfoResourceDetailViewModel.swift */,
+				5115242221BC903C00FDC466 /* FavoritesListViewModel.swift */,
+				5115242421BC905100FDC466 /* FavoritesDetailViewModel.swift */,
+				5115242621BC906500FDC466 /* SettingsViewModel.swift */,
 			);
 			path = "View Models";
 			sourceTree = "<group>";
@@ -552,14 +570,20 @@
 			files = (
 				5115240C21BC72D900FDC466 /* StarWarsApi.swift in Sources */,
 				5115241521BC8F1700FDC466 /* InfoResourceDetailViewController.swift in Sources */,
+				5115241F21BC900A00FDC466 /* InfoResourceListViewModel.swift in Sources */,
+				5115241D21BC8FF500FDC466 /* InfoResourceChoiceViewModel.swift in Sources */,
 				519E7BDB21BB55D9002518EB /* ViewController.swift in Sources */,
 				5115241B21BC8F6B00FDC466 /* SettingsViewController.swift in Sources */,
+				5115242521BC905100FDC466 /* FavoritesDetailViewModel.swift in Sources */,
 				519E7BD921BB55D9002518EB /* AppDelegate.swift in Sources */,
 				5115240F21BC87E300FDC466 /* Constants.swift in Sources */,
 				5115241121BC8E8300FDC466 /* InfoResourceListViewController.swift in Sources */,
+				5115242121BC901D00FDC466 /* InfoResourceDetailViewModel.swift in Sources */,
+				5115242321BC903C00FDC466 /* FavoritesListViewModel.swift in Sources */,
 				5115241721BC8F2C00FDC466 /* FavoritesListViewController.swift in Sources */,
 				5115241321BC8EF900FDC466 /* InfoResourceChoiceViewController.swift in Sources */,
 				5115241921BC8F5900FDC466 /* FavoritesDetailViewController.swift in Sources */,
+				5115242721BC906500FDC466 /* SettingsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

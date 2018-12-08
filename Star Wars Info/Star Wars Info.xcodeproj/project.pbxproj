@@ -11,6 +11,12 @@
 		065EC4742160A4F9442C1B97 /* Pods_Star_Wars_InfoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F59CC612EE16FA092DEA8B0 /* Pods_Star_Wars_InfoTests.framework */; };
 		5115240C21BC72D900FDC466 /* StarWarsApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5115240B21BC72D900FDC466 /* StarWarsApi.swift */; };
 		5115240F21BC87E300FDC466 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5115240E21BC87E300FDC466 /* Constants.swift */; };
+		5115241121BC8E8300FDC466 /* InfoResourceListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5115241021BC8E8300FDC466 /* InfoResourceListViewController.swift */; };
+		5115241321BC8EF900FDC466 /* InfoResourceChoiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5115241221BC8EF900FDC466 /* InfoResourceChoiceViewController.swift */; };
+		5115241521BC8F1700FDC466 /* InfoResourceDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5115241421BC8F1700FDC466 /* InfoResourceDetailViewController.swift */; };
+		5115241721BC8F2C00FDC466 /* FavoritesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5115241621BC8F2C00FDC466 /* FavoritesListViewController.swift */; };
+		5115241921BC8F5900FDC466 /* FavoritesDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5115241821BC8F5900FDC466 /* FavoritesDetailViewController.swift */; };
+		5115241B21BC8F6B00FDC466 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5115241A21BC8F6B00FDC466 /* SettingsViewController.swift */; };
 		519E7BD921BB55D9002518EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 519E7BD821BB55D9002518EB /* AppDelegate.swift */; };
 		519E7BDB21BB55D9002518EB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 519E7BDA21BB55D9002518EB /* ViewController.swift */; };
 		519E7BDE21BB55D9002518EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 519E7BDC21BB55D9002518EB /* Main.storyboard */; };
@@ -43,6 +49,12 @@
 		2F59CC612EE16FA092DEA8B0 /* Pods_Star_Wars_InfoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Star_Wars_InfoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5115240B21BC72D900FDC466 /* StarWarsApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarsApi.swift; sourceTree = "<group>"; };
 		5115240E21BC87E300FDC466 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		5115241021BC8E8300FDC466 /* InfoResourceListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoResourceListViewController.swift; sourceTree = "<group>"; };
+		5115241221BC8EF900FDC466 /* InfoResourceChoiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoResourceChoiceViewController.swift; sourceTree = "<group>"; };
+		5115241421BC8F1700FDC466 /* InfoResourceDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoResourceDetailViewController.swift; sourceTree = "<group>"; };
+		5115241621BC8F2C00FDC466 /* FavoritesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesListViewController.swift; sourceTree = "<group>"; };
+		5115241821BC8F5900FDC466 /* FavoritesDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesDetailViewController.swift; sourceTree = "<group>"; };
+		5115241A21BC8F6B00FDC466 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		519E7BD521BB55D9002518EB /* Star Wars Info.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Star Wars Info.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		519E7BD821BB55D9002518EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		519E7BDA21BB55D9002518EB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -219,6 +231,12 @@
 		519E7C0C21BBA9AB002518EB /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				5115241221BC8EF900FDC466 /* InfoResourceChoiceViewController.swift */,
+				5115241021BC8E8300FDC466 /* InfoResourceListViewController.swift */,
+				5115241421BC8F1700FDC466 /* InfoResourceDetailViewController.swift */,
+				5115241621BC8F2C00FDC466 /* FavoritesListViewController.swift */,
+				5115241821BC8F5900FDC466 /* FavoritesDetailViewController.swift */,
+				5115241A21BC8F6B00FDC466 /* SettingsViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -533,9 +551,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				5115240C21BC72D900FDC466 /* StarWarsApi.swift in Sources */,
+				5115241521BC8F1700FDC466 /* InfoResourceDetailViewController.swift in Sources */,
 				519E7BDB21BB55D9002518EB /* ViewController.swift in Sources */,
+				5115241B21BC8F6B00FDC466 /* SettingsViewController.swift in Sources */,
 				519E7BD921BB55D9002518EB /* AppDelegate.swift in Sources */,
 				5115240F21BC87E300FDC466 /* Constants.swift in Sources */,
+				5115241121BC8E8300FDC466 /* InfoResourceListViewController.swift in Sources */,
+				5115241721BC8F2C00FDC466 /* FavoritesListViewController.swift in Sources */,
+				5115241321BC8EF900FDC466 /* InfoResourceChoiceViewController.swift in Sources */,
+				5115241921BC8F5900FDC466 /* FavoritesDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

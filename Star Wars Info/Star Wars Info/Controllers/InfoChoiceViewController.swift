@@ -8,7 +8,7 @@
 
 import UIKit
 
-class InfoResourceChoiceViewController: UIViewController {
+class InfoChoiceViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

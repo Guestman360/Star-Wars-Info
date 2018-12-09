@@ -1,5 +1,5 @@
 //
-//  InfoResourceDetailViewController.swift
+//  InfoResourceListViewController.swift
 //  Star Wars Info
 //
 //  Created by Matthew Guest on 12/8/18.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class InfoResourceDetailViewController: UIViewController {
+class InfoListViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

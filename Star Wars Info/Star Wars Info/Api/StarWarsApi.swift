@@ -38,6 +38,27 @@ struct StarWarsApi: StarWarsApiProtocol {
     
     /*
      This file needs to be injected as dependancy into whatever screen needs it
+     
+     when all is selected return the name keys alphbetized in tableview
+     
+     IMPORTANT!!! - When json object is retreived make sure to map over and ini with desired object type
+     For example when planets category is selected, after request gets data map data by using (Planets.init) and load next tableview
+     
+     .filter { response, _ in
+     return 200..<300 ~= response.statusCode
+     }
+     .map { _, data -> [[String: Any]] in
+     guard let jsonObject = try? JSONSerialization.jsonObject(with: data,
+     options: []),
+     let result = jsonObject as? [[String: Any]] else { return [] }
+     return result
+     }
+     .map { objects in
+     return objects.compactMap(Event.init) // compact map prevents nil objects from returning as well
+     }
+     .subscribe(onNext: { [weak self] newEvents in
+     self?.processEvents(newEvents)
+     })
      */
     
     // MARK: - API errors

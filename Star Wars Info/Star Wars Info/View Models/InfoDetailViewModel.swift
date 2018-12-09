@@ -1,5 +1,5 @@
 //
-//  InfoResourceListViewModel.swift
+//  InfoResourceDetailViewModel.swift
 //  Star Wars Info
 //
 //  Created by Matthew Guest on 12/8/18.
@@ -7,3 +7,7 @@
 //
 
 import Foundation
+
+struct InfoDetailViewModel {
+    
+}

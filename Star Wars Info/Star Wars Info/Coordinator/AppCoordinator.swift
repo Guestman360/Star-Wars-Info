@@ -14,6 +14,11 @@ class AppCoordinator: CoordinatorType {
     
     fileprivate var window: UIWindow
     fileprivate var currentViewController: UIViewController
+    //var childCoordinators: [NSObject] = []
+    
+    /*
+     Refactor AppCoordinator to manage other coordinators, like info, favorites and settings
+     */
     
     required init(window: UIWindow) {
         self.window = window

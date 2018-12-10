@@ -10,4 +10,10 @@ import Foundation
 
 struct InfoChoiceViewModel {
     
+    let coordinatorType: CoordinatorType
+    
+    init(coordinator: CoordinatorType) {
+        self.coordinatorType = coordinator
+    }
+    
 }

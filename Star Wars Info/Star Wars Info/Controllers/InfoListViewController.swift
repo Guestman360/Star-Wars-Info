@@ -16,6 +16,10 @@ class InfoListViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    func bindViewModel() {
+        
+    }
+    
 
     /*
     // MARK: - Navigation

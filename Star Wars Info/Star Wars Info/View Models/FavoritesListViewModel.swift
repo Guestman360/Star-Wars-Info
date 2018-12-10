@@ -10,4 +10,10 @@ import Foundation
 
 struct FavoritesListViewModel {
     
+    let coordinatorType: CoordinatorType
+    
+    init(coordinator: CoordinatorType) {
+        self.coordinatorType = coordinator
+    }
+    
 }

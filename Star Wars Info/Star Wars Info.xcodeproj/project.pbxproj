@@ -31,6 +31,7 @@
 		5115243321BCDC1100FDC466 /* Coordinator+ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5115243221BCDC1100FDC466 /* Coordinator+ViewController.swift */; };
 		5115243521BCDC2400FDC466 /* TransitionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5115243421BCDC2400FDC466 /* TransitionType.swift */; };
 		5115243721BCE2FC00FDC466 /* UINavigationController+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5115243621BCE2FC00FDC466 /* UINavigationController+Rx.swift */; };
+		5115243921BDF65B00FDC466 /* TabCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5115243821BDF65B00FDC466 /* TabCoordinator.swift */; };
 		519E7BD921BB55D9002518EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 519E7BD821BB55D9002518EB /* AppDelegate.swift */; };
 		519E7BDB21BB55D9002518EB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 519E7BDA21BB55D9002518EB /* ViewController.swift */; };
 		519E7BDE21BB55D9002518EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 519E7BDC21BB55D9002518EB /* Main.storyboard */; };
@@ -83,6 +84,7 @@
 		5115243221BCDC1100FDC466 /* Coordinator+ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Coordinator+ViewController.swift"; sourceTree = "<group>"; };
 		5115243421BCDC2400FDC466 /* TransitionType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionType.swift; sourceTree = "<group>"; };
 		5115243621BCE2FC00FDC466 /* UINavigationController+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Rx.swift"; sourceTree = "<group>"; };
+		5115243821BDF65B00FDC466 /* TabCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabCoordinator.swift; sourceTree = "<group>"; };
 		519E7BD521BB55D9002518EB /* Star Wars Info.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Star Wars Info.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		519E7BD821BB55D9002518EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		519E7BDA21BB55D9002518EB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -230,6 +232,7 @@
 				5115243021BCDBE500FDC466 /* AppCoordinator.swift */,
 				5115243221BCDC1100FDC466 /* Coordinator+ViewController.swift */,
 				5115243421BCDC2400FDC466 /* TransitionType.swift */,
+				5115243821BDF65B00FDC466 /* TabCoordinator.swift */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
@@ -597,6 +600,7 @@
 				5115241F21BC900A00FDC466 /* InfoListViewModel.swift in Sources */,
 				5115241D21BC8FF500FDC466 /* InfoChoiceViewModel.swift in Sources */,
 				519E7BDB21BB55D9002518EB /* ViewController.swift in Sources */,
+				5115243921BDF65B00FDC466 /* TabCoordinator.swift in Sources */,
 				5115241B21BC8F6B00FDC466 /* SettingsViewController.swift in Sources */,
 				5115243521BCDC2400FDC466 /* TransitionType.swift in Sources */,
 				5115242D21BCD83300FDC466 /* Coordinator.swift in Sources */,

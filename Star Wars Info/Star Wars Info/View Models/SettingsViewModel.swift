@@ -10,4 +10,10 @@ import Foundation
 
 struct SettingsViewModel {
     
+    let coordinatorType: CoordinatorType
+    
+    init(coordinator: CoordinatorType) {
+        self.coordinatorType = coordinator
+    }
+    
 }

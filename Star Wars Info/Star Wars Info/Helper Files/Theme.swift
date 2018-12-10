@@ -15,10 +15,15 @@ import UIKit
 //}
 //
 //struct ApplicationTheme {
-//    
+//
 //    static let shared = ApplicationTheme()
-//    
+//
 //}
+
+// https://academy.realm.io/posts/architecting-a-robust-color-system-swift-tryswift-2017-ragone/
+// https://github.com/luispadron/GradePoint/blob/master/GradePoint/Managers/ApplicationTheme.swift
+// https://github.com/kyleshin/demoTheme/blob/master/themeDemo/Controller/SettingsViewController.swift
+// https://medium.com/@mczachurski/ios-dark-theme-9a12724c112d
 
 enum Theme: Int {
     case light, dark

@@ -7,8 +7,14 @@
 //
 
 import UIKit
+import RxSwift
 
-class InfoListViewController: UIViewController {
+class InfoListViewController: UIViewController, BindableType {
+    
+    var viewModel: InfoListViewModel!
+    let rx_disposeBag = DisposeBag()
+    
+    var finishedBlock: (() -> Void)?
 
     override func viewDidLoad() {
         super.viewDidLoad()

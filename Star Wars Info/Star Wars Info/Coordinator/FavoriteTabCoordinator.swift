@@ -22,7 +22,7 @@ class FavoritesTabCoordinator: RootTabCoordinator {
         rootController = UINavigationController(rootViewController: main)
         rootController.tabBarItem = tabBarItem
         
-        //main.finishedBlock = { self.showSecondViewController() }
+        main.finishedBlock = { self.showFavoritesDetailVC() }
     }
 }
 

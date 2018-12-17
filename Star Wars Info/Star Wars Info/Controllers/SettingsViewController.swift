@@ -7,8 +7,12 @@
 //
 
 import UIKit
+import RxSwift
 
-class SettingsViewController: UIViewController {
+class SettingsViewController: UIViewController, BindableType {
+    
+    var viewModel: SettingsViewModel!
+    let rx_disposeBag = DisposeBag()
 
     override func viewDidLoad() {
         super.viewDidLoad()

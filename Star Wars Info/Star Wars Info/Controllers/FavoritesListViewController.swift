@@ -7,8 +7,14 @@
 //
 
 import UIKit
+import RxSwift
 
-class FavoritesListViewController: UIViewController {
+class FavoritesListViewController: UIViewController, BindableType {
+    
+    var viewModel: FavoritesListViewModel!
+    let rx_disposeBag = DisposeBag()
+    
+    var finishedBlock: (() -> Void)?
 
     override func viewDidLoad() {
         super.viewDidLoad()

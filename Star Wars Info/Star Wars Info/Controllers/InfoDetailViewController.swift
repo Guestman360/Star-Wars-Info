@@ -7,8 +7,12 @@
 //
 
 import UIKit
+import RxSwift
 
-class InfoDetailViewController: UIViewController {
+class InfoDetailViewController: UIViewController, BindableType {
+    
+    var viewModel: InfoDetailViewModel!
+    let rx_disposeBag = DisposeBag()
 
     override func viewDidLoad() {
         super.viewDidLoad()

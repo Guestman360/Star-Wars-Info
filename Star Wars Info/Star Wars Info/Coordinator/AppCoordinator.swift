@@ -15,7 +15,7 @@ class AppCoordinator {
     var tabBarController: UITabBarController
     var tabs: [AnyTabCoordinator]
     var window: UIWindow?
-    
+    // Pass coordinator in init?
     public init(window: UIWindow?) {
         self.tabBarController = UITabBarController()
         self.window = window

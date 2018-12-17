@@ -7,8 +7,14 @@
 //
 
 import UIKit
+import RxSwift
 
-class InfoChoiceViewController: UIViewController {
+class InfoChoiceViewController: UIViewController, BindableType {
+    
+    var viewModel: InfoChoiceViewModel!
+    let rx_disposeBag = DisposeBag()
+    
+    var finishedBlock: (() -> Void)?
 
     override func viewDidLoad() {
         super.viewDidLoad()

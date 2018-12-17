@@ -17,12 +17,13 @@ class InfoTabCoordinator: RootTabCoordinator {
     var tabBarItem: UITabBarItem = UITabBarItem(tabBarSystemItem: .search, tag: 1)
     
     init() {
+        // Take coordinator as param in initializer
         let main: InfoChoiceViewController = storyboard.inflateVC()
         
         rootController = UINavigationController(rootViewController: main)
         rootController.tabBarItem = tabBarItem
         
-        //main.finishedBlock = { self.showSecondViewController() }
+        main.finishedBlock = { self.showInfoListVC() }
     }
 }
 

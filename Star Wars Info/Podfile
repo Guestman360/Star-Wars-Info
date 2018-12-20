@@ -18,6 +18,7 @@ target 'Star Wars Info' do
   pod 'RxRealmDataSources'
   pod 'Action'
   pod 'NSObject+Rx'
+  pod 'SwiftyJSON', '~> 4.0'
 
   target 'Star Wars InfoTests' do
     inherit! :search_paths

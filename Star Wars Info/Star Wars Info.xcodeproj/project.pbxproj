@@ -14,6 +14,7 @@
 		5112325921C75DBE00D6C6DD /* InfoTabModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5112325821C75DBE00D6C6DD /* InfoTabModule.swift */; };
 		5112325B21C75DD800D6C6DD /* FavoritesTabModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5112325A21C75DD800D6C6DD /* FavoritesTabModule.swift */; };
 		5112325D21C75DF000D6C6DD /* SettingsTabModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5112325C21C75DF000D6C6DD /* SettingsTabModule.swift */; };
+		5112325F21CB535E00D6C6DD /* URLSession+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5112325E21CB535E00D6C6DD /* URLSession+Rx.swift */; };
 		5115240C21BC72D900FDC466 /* StarWarsApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5115240B21BC72D900FDC466 /* StarWarsApi.swift */; };
 		5115240F21BC87E300FDC466 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5115240E21BC87E300FDC466 /* Constants.swift */; };
 		5115241121BC8E8300FDC466 /* InfoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5115241021BC8E8300FDC466 /* InfoListViewController.swift */; };
@@ -77,6 +78,7 @@
 		5112325821C75DBE00D6C6DD /* InfoTabModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoTabModule.swift; sourceTree = "<group>"; };
 		5112325A21C75DD800D6C6DD /* FavoritesTabModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesTabModule.swift; sourceTree = "<group>"; };
 		5112325C21C75DF000D6C6DD /* SettingsTabModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTabModule.swift; sourceTree = "<group>"; };
+		5112325E21CB535E00D6C6DD /* URLSession+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLSession+Rx.swift"; sourceTree = "<group>"; };
 		5115240B21BC72D900FDC466 /* StarWarsApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarsApi.swift; sourceTree = "<group>"; };
 		5115240E21BC87E300FDC466 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		5115241021BC8E8300FDC466 /* InfoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoListViewController.swift; sourceTree = "<group>"; };
@@ -383,6 +385,7 @@
 			children = (
 				5115243621BCE2FC00FDC466 /* UINavigationController+Rx.swift */,
 				5115243E21C21AC700FDC466 /* Storyboard+Extensions.swift */,
+				5112325E21CB535E00D6C6DD /* URLSession+Rx.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -681,6 +684,7 @@
 				"${BUILT_PRODUCTS_DIR}/RxRealm/RxRealm.framework",
 				"${BUILT_PRODUCTS_DIR}/RxRealmDataSources/RxRealmDataSources.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/Then/Then.framework",
 				"${BUILT_PRODUCTS_DIR}/Unbox/Unbox.framework",
 			);
@@ -700,6 +704,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxRealm.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxRealmDataSources.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Then.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Unbox.framework",
 			);
@@ -729,6 +734,7 @@
 				5115242521BC905100FDC466 /* FavoritesDetailViewModel.swift in Sources */,
 				5115243721BCE2FC00FDC466 /* UINavigationController+Rx.swift in Sources */,
 				519E7BD921BB55D9002518EB /* AppDelegate.swift in Sources */,
+				5112325F21CB535E00D6C6DD /* URLSession+Rx.swift in Sources */,
 				5115240F21BC87E300FDC466 /* Constants.swift in Sources */,
 				5115241121BC8E8300FDC466 /* InfoListViewController.swift in Sources */,
 				5115242B21BCCB4800FDC466 /* Theme.swift in Sources */,

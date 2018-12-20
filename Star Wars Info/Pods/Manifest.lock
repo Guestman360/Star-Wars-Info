@@ -31,6 +31,7 @@ PODS:
   - RxTest (4.4.0):
     - RxAtomic (~> 4.4)
     - RxSwift (~> 4.0)
+  - SwiftyJSON (4.2.0)
   - Then (2.4.0)
   - Unbox (3.0.0)
 
@@ -47,6 +48,7 @@ DEPENDENCIES:
   - RxRealmDataSources
   - RxSwift
   - RxTest
+  - SwiftyJSON (~> 4.0)
   - Then
   - Unbox
 
@@ -66,6 +68,7 @@ SPEC REPOS:
     - RxRealmDataSources
     - RxSwift
     - RxTest
+    - SwiftyJSON
     - Then
     - Unbox
 
@@ -84,9 +87,10 @@ SPEC CHECKSUMS:
   RxRealmDataSources: 89b61c0d3edf7769da2a6bf4dcf317bc713394db
   RxSwift: 5976ecd04fc2fefd648827c23de5e11157faa973
   RxTest: 19d03286bdc0a3aaea5d61d4cde31fdf4bb8a5ba
+  SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
   Then: 71866660c7af35a7343831f7668e7cd2b62ee0f2
   Unbox: 9ed33b2a31f7a8a049f54b94d40c4a52a28c4d9d
 
-PODFILE CHECKSUM: 3060639f5ede61ba0aaf2c39211f7ab37a64b038
+PODFILE CHECKSUM: 7e6210de02d4dc401b751900a6edda97a1404ae7
 
 COCOAPODS: 1.5.3

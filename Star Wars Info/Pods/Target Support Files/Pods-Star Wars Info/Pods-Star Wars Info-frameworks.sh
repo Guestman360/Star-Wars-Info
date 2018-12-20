@@ -155,6 +155,7 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/RxRealm/RxRealm.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/RxRealmDataSources/RxRealmDataSources.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Then/Then.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Unbox/Unbox.framework"
 fi
@@ -171,6 +172,7 @@ if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/RxRealm/RxRealm.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/RxRealmDataSources/RxRealmDataSources.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Then/Then.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Unbox/Unbox.framework"
 fi

@@ -1,5 +1,5 @@
 //
-//  InfoResourceChoiceViewController.swift
+//  InfoResourceDetailViewController.swift
 //  Star Wars Info
 //
 //  Created by Matthew Guest on 12/8/18.
@@ -9,17 +9,19 @@
 import UIKit
 import RxSwift
 
-class InfoChoiceViewController: UIViewController, BindableType {
+class InfoDetailViewController: UIViewController, Injectable {
     
-    var viewModel: InfoChoiceViewModel!
+    typealias Dependencies = HasInfoDetailViewModel
+    var dependencies: Dependencies!
+    
+    lazy var viewModel = dependencies.infoDetailViewModel
     let rx_disposeBag = DisposeBag()
-    
-    var finishedBlock: (() -> Void)?
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        // Displays data fetched from view models, bind to view
     }
     
     func bindViewModel() {

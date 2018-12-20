@@ -16,9 +16,11 @@ class InfoTabCoordinator: RootTabCoordinator {
     
     var tabBarItem: UITabBarItem = UITabBarItem(tabBarSystemItem: .search, tag: 1)
     
+    let dependencies = InfoTabModule()
+    
     init() {
         // Take coordinator as param in initializer
-        let main: InfoChoiceViewController = storyboard.inflateVC()
+        let main: InfoChoiceViewController = storyboard.inflateVC(with: dependencies)
         
         rootController = UINavigationController(rootViewController: main)
         rootController.tabBarItem = tabBarItem
@@ -31,7 +33,7 @@ class InfoTabCoordinator: RootTabCoordinator {
 extension InfoTabCoordinator {
     
     func showInfoListVC() {
-        let secondVC: InfoListViewController = storyboard.inflateVC()
+        let secondVC: InfoListViewController = storyboard.inflateVC(with: dependencies)
         self.rootController.pushViewController(secondVC, animated: true)
     }
 }

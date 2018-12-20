@@ -12,6 +12,10 @@
 
 import UIKit
 
+// MARK: Module
+
+class Module {}
+
 // MARK: RootTabCoordinator
 
 protocol TabCoordinator {
@@ -27,7 +31,12 @@ extension TabCoordinator {
     }
 }
 
-typealias RootTabCoordinator = TabCoordinator
+protocol DependencyProvidable {
+    associatedtype ProvidableType: Module
+    var dependencies: ProvidableType { get }
+}
+
+typealias RootTabCoordinator = TabCoordinator & DependencyProvidable
 
 class AnyTabCoordinator {
     var rootController: UIViewController

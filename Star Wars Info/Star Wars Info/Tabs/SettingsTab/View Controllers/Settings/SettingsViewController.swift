@@ -1,5 +1,5 @@
 //
-//  FavoritesDetailViewController.swift
+//  SettingsViewController.swift
 //  Star Wars Info
 //
 //  Created by Matthew Guest on 12/8/18.
@@ -9,20 +9,25 @@
 import UIKit
 import RxSwift
 
-class FavoritesDetailViewController: UIViewController, BindableType {
+class SettingsViewController: UIViewController, Injectable {
     
-    var viewModel: FavoritesDetailViewModel!
+    typealias Dependencies = HasSettingsViewModel
+    var dependencies: Dependencies!
+    
+    lazy var viewModel = dependencies.settingsViewModel
     let rx_disposeBag = DisposeBag()
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        // toggle dark theme, add wookie data, make both toggle switches
     }
     
     func bindViewModel() {
         
     }
+    
 
     /*
     // MARK: - Navigation

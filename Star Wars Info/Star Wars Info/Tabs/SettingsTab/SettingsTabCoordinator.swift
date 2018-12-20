@@ -16,6 +16,8 @@ class SettingsTabCoordinator: RootTabCoordinator {
     
     var tabBarItem: UITabBarItem = UITabBarItem(tabBarSystemItem: .more, tag: 3)
     
+    let dependencies = SettingsTabModule()
+    
     init() {
         let main: SettingsViewController = storyboard.inflateVC()
         

@@ -27,4 +27,10 @@ extension UIStoryboard {
         }
         fatalError("Could not find " + String(describing: T.self) + ". Perhaps you need to add the class name to the StoryboardID for that UIViewController in IB?")
     }
+    
+    func inflateVC<T: UIViewController & Injectable>(with dependencies: T.Dependencies) -> T {
+        var vc: T = self.inflateVC()
+        vc.dependencies = dependencies
+        return vc
+    }
 }

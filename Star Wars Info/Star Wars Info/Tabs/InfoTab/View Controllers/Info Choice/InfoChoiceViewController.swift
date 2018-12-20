@@ -1,5 +1,5 @@
 //
-//  FavoritesListViewController.swift
+//  InfoResourceChoiceViewController.swift
 //  Star Wars Info
 //
 //  Created by Matthew Guest on 12/8/18.
@@ -9,9 +9,14 @@
 import UIKit
 import RxSwift
 
-class FavoritesListViewController: UIViewController, BindableType {
+class InfoChoiceViewController: UIViewController, Injectable { // BindableType, add later?
     
-    var viewModel: FavoritesListViewModel!
+    typealias Dependencies = HasInfoViewModel
+    var dependencies: Dependencies!
+    
+    lazy var viewModel = dependencies.infoChoiceViewModel
+    
+    //var viewModel: InfoChoiceViewModel!
     let rx_disposeBag = DisposeBag()
     
     var finishedBlock: (() -> Void)?
@@ -20,11 +25,13 @@ class FavoritesListViewController: UIViewController, BindableType {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        // Add request to api to get cateogories, load them here
     }
     
     func bindViewModel() {
         
     }
+    
 
     /*
     // MARK: - Navigation

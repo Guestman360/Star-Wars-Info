@@ -1,5 +1,5 @@
 //
-//  InfoResourceDetailViewController.swift
+//  FavoritesDetailViewController.swift
 //  Star Wars Info
 //
 //  Created by Matthew Guest on 12/8/18.
@@ -9,21 +9,24 @@
 import UIKit
 import RxSwift
 
-class InfoDetailViewController: UIViewController, BindableType {
+class FavoritesDetailViewController: UIViewController, Injectable {
     
-    var viewModel: InfoDetailViewModel!
+    typealias Dependencies = HasFavoritesDetailViewModel
+    var dependencies: Dependencies!
+    
+    lazy var viewModel = dependencies.favoritesDetailViewModel
     let rx_disposeBag = DisposeBag()
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        // Same as info detail except loading the database data,  have an unfavorite button at top right corner
     }
     
     func bindViewModel() {
         
     }
-    
 
     /*
     // MARK: - Navigation

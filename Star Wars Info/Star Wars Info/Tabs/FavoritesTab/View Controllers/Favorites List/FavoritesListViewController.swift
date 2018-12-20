@@ -1,5 +1,5 @@
 //
-//  InfoResourceListViewController.swift
+//  FavoritesListViewController.swift
 //  Star Wars Info
 //
 //  Created by Matthew Guest on 12/8/18.
@@ -9,9 +9,12 @@
 import UIKit
 import RxSwift
 
-class InfoListViewController: UIViewController, BindableType {
+class FavoritesListViewController: UIViewController, Injectable {
     
-    var viewModel: InfoListViewModel!
+    typealias Dependencies = HasFavoritesListViewModel
+    var dependencies: Dependencies!
+    
+    lazy var viewModel = dependencies.favoritesListViewModel
     let rx_disposeBag = DisposeBag()
     
     var finishedBlock: (() -> Void)?
@@ -20,12 +23,13 @@ class InfoListViewController: UIViewController, BindableType {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        // Realm database that displays all recently saved models
+        // must allow user to delete when swiping
     }
     
     func bindViewModel() {
         
     }
-    
 
     /*
     // MARK: - Navigation

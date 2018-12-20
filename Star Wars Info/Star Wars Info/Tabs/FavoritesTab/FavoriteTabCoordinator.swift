@@ -16,8 +16,10 @@ class FavoritesTabCoordinator: RootTabCoordinator {
     
     var tabBarItem: UITabBarItem = UITabBarItem(tabBarSystemItem: .favorites, tag: 2)
     
+    let dependencies = FavoritesTabModule()
+    
     init() {
-        let main: FavoritesListViewController = storyboard.inflateVC()
+        let main: FavoritesListViewController = storyboard.inflateVC(with: dependencies)
         
         rootController = UINavigationController(rootViewController: main)
         rootController.tabBarItem = tabBarItem
@@ -30,7 +32,7 @@ class FavoritesTabCoordinator: RootTabCoordinator {
 extension FavoritesTabCoordinator {
     
     func showFavoritesDetailVC() {
-        let secondVC: FavoritesDetailViewController = storyboard.inflateVC()
+        let secondVC: FavoritesDetailViewController = storyboard.inflateVC(with: dependencies)
         self.rootController.pushViewController(secondVC, animated: true)
     }
 }

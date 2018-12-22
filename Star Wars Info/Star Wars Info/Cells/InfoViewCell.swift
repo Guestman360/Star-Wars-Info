@@ -12,12 +12,19 @@ class InfoViewCell: UITableViewCell {
     
     static let reuseID = "InfoCell"
     
-//    @IBOutlet var firstName: UILabel!
-//    @IBOutlet var lastName: UILabel!
+    @IBOutlet weak var categoryName: UILabel!
     
-//    func populate(from data: User?) {
-//
-//        firstName.text = data?.firstName
-//        lastName.text = data?.lastName
-//    }
+    var categoryUrl: String = ""
+    
+    func populate(from key: String, value: Any) {
+
+        categoryName.text = key
+        if let urlValue = value as? String {
+            categoryUrl = urlValue
+        }
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
 }

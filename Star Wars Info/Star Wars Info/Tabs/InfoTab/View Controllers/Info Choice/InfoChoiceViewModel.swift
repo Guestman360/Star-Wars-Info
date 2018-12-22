@@ -7,21 +7,44 @@
 //
 
 import Foundation
+import RxCocoa
+import RxSwift
 
 protocol HasInfoViewModel {
     var infoChoiceViewModel: InfoViewModelConformable { get }
 }
 
 protocol InfoViewModelConformable {
+    var categories: [JSONObject]? { get }
     
+    func getCategories()
 }
 
-struct InfoChoiceViewModel: InfoViewModelConformable {
+class InfoChoiceViewModel: InfoViewModelConformable {
     
-    //let coordinatorType: CoordinatorType
+    let disposeBag = DisposeBag()
     
-    init() { // coordinator: CoordinatorType
-        //self.coordinatorType = coordinator
+    var categories: [JSONObject]? = [] // Observable<[JSONObject]>(value: nil)
+    
+    // for some reason this causes internal init access error ... probably because of take(1) or modifiying categories from getCategories
+    // App just doesnt like use of observable, found out i needed a public override init() { } in tab module
+    //var categories: JSONObject = [:]
+    
+    func getCategories() {
+        // run request and add to categories here
+        StarWarsApi.requestInfo(ofType: .all)
+            .asObservable()
+            .take(1)
+            .subscribe(onNext: { object in
+                print("subscribing...")
+                self.categories = object as [JSONObject]
+            })
+            .disposed(by: disposeBag)
+        //let categories = StarWarsApi.requestInfo(ofType: .all)
+//        categories.map { object in
+//
+//        }
+        //self.categories = categories
     }
     
 }

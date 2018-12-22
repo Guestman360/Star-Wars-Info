@@ -42,7 +42,7 @@ class AnyTabCoordinator {
     var rootController: UIViewController
     var tabBarItem: UITabBarItem
     
-    init<T: TabCoordinator>(_ tabCoordinator: T) {
+    public init<T: TabCoordinator>(_ tabCoordinator: T) {
         rootController = tabCoordinator.rootController
         tabBarItem = tabCoordinator.tabBarItem
     }

@@ -22,4 +22,6 @@ class InfoTabModule: Module, HasInfoViewModel, HasInfoListViewModel, HasInfoDeta
         return InfoDetailViewModel()
     }
     
+    public override init() { }
+    
 }

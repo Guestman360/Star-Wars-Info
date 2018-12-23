@@ -14,17 +14,18 @@ class InfoViewCell: UITableViewCell {
     
     @IBOutlet weak var categoryName: UILabel!
     
-    var categoryUrl: String = ""
+    //var categoryUrl: String = ""
     
-    func populate(from key: String, value: Any) {
-
-        categoryName.text = key
-        if let urlValue = value as? String {
-            categoryUrl = urlValue
-        }
+    func populate(from data: String) {
+        
+        categoryName.text = data
     }
     
-    required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
+//    func populate(from key: String, value: Any) {
+//
+//        categoryName.text = key
+//        if let urlValue = value as? String {
+//            categoryUrl = urlValue
+//        }
+//    }
 }

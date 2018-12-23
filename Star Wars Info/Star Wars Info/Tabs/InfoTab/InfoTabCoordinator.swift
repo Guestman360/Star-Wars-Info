@@ -20,7 +20,7 @@ class InfoTabCoordinator: RootTabCoordinator {
     
     init() {
         // Take coordinator as param in initializer
-        let main: InfoChoiceViewController = storyboard.inflateVC(with: dependencies)
+        let main: InfoChoiceViewController = storyboard.inflateVC()
         
         rootController = UINavigationController(rootViewController: main)
         rootController.tabBarItem = tabBarItem

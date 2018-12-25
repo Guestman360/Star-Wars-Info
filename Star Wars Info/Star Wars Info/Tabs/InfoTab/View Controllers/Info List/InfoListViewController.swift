@@ -11,10 +11,20 @@ import RxSwift
 
 class InfoListViewController: UIViewController, Injectable {
     
+    @IBOutlet weak var tableView: UITableView!
+    
     typealias Dependencies = HasInfoListViewModel
     var dependencies: Dependencies!
     
     lazy var viewModel = dependencies.infoListViewModel
+    
+    // fixed issue by going cmd+ctrl observable and adding public init
+    // https://stackoverflow.com/questions/51364620/getting-initializer-is-inaccessible-due-to-internal-protection-level?rq=1
+    var selectedCategoryData = BehaviorSubject<[JSONObject]>(value: [])
+    
+    var selectedObserver: Observable<[JSONObject]> {
+        return selectedCategoryData.asObserver()
+    }
     
     let rx_disposeBag = DisposeBag()
     
@@ -23,24 +33,16 @@ class InfoListViewController: UIViewController, Injectable {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        print("Category data: \(String(describing: try? selectedCategoryData.value().count))")
         // Do any additional setup after loading the view.
         // Take category selection and make request to fetch all data, sort alpahbetically (with A-Z sections)
         // Bind tableview to response
+        // When on this vc run selectedCategoryData immediately, or run request, run activity indicator, then once data is recieved, set selectedCategoryData here then segue?
     }
     
     func bindViewModel() {
         
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

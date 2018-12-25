@@ -8,7 +8,7 @@
 
 import UIKit
 
-protocol Injectable {
+public protocol Injectable {
     associatedtype Dependencies
     var dependencies: Dependencies! { get set }
 }

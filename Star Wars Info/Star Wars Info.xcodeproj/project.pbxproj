@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		0503C06911C92F711A475AB4 /* Pods_Star_Wars_Info.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D58AAB52F66C007259A19C7 /* Pods_Star_Wars_Info.framework */; };
 		065EC4742160A4F9442C1B97 /* Pods_Star_Wars_InfoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F59CC612EE16FA092DEA8B0 /* Pods_Star_Wars_InfoTests.framework */; };
+		510EDFC721D21556008FBDFE /* Vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 510EDFC621D21556008FBDFE /* Vehicle.swift */; };
+		510EDFC921D21569008FBDFE /* Starship.swift in Sources */ = {isa = PBXBuildFile; fileRef = 510EDFC821D21569008FBDFE /* Starship.swift */; };
+		510EDFCB21D2158A008FBDFE /* Film.swift in Sources */ = {isa = PBXBuildFile; fileRef = 510EDFCA21D2158A008FBDFE /* Film.swift */; };
+		510EDFCD21D2159E008FBDFE /* People.swift in Sources */ = {isa = PBXBuildFile; fileRef = 510EDFCC21D2159E008FBDFE /* People.swift */; };
+		510EDFCF21D215A8008FBDFE /* Planet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 510EDFCE21D215A8008FBDFE /* Planet.swift */; };
+		510EDFD121D215C0008FBDFE /* Specie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 510EDFD021D215C0008FBDFE /* Specie.swift */; };
 		5112324921C757D000D6C6DD /* Injectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5112324821C757D000D6C6DD /* Injectable.swift */; };
 		5112325721C75D6300D6C6DD /* InfoViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5112325621C75D6300D6C6DD /* InfoViewCell.swift */; };
 		5112325921C75DBE00D6C6DD /* InfoTabModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5112325821C75DBE00D6C6DD /* InfoTabModule.swift */; };
@@ -73,6 +79,12 @@
 /* Begin PBXFileReference section */
 		2D58AAB52F66C007259A19C7 /* Pods_Star_Wars_Info.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Star_Wars_Info.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F59CC612EE16FA092DEA8B0 /* Pods_Star_Wars_InfoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Star_Wars_InfoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		510EDFC621D21556008FBDFE /* Vehicle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vehicle.swift; sourceTree = "<group>"; };
+		510EDFC821D21569008FBDFE /* Starship.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Starship.swift; sourceTree = "<group>"; };
+		510EDFCA21D2158A008FBDFE /* Film.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Film.swift; sourceTree = "<group>"; };
+		510EDFCC21D2159E008FBDFE /* People.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = People.swift; sourceTree = "<group>"; };
+		510EDFCE21D215A8008FBDFE /* Planet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Planet.swift; sourceTree = "<group>"; };
+		510EDFD021D215C0008FBDFE /* Specie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Specie.swift; sourceTree = "<group>"; };
 		5112324821C757D000D6C6DD /* Injectable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Injectable.swift; sourceTree = "<group>"; };
 		5112325621C75D6300D6C6DD /* InfoViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewCell.swift; sourceTree = "<group>"; };
 		5112325821C75DBE00D6C6DD /* InfoTabModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoTabModule.swift; sourceTree = "<group>"; };
@@ -401,6 +413,12 @@
 		519E7C0B21BBA97B002518EB /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				510EDFCA21D2158A008FBDFE /* Film.swift */,
+				510EDFCC21D2159E008FBDFE /* People.swift */,
+				510EDFCE21D215A8008FBDFE /* Planet.swift */,
+				510EDFD021D215C0008FBDFE /* Specie.swift */,
+				510EDFC821D21569008FBDFE /* Starship.swift */,
+				510EDFC621D21556008FBDFE /* Vehicle.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -720,10 +738,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				510EDFD121D215C0008FBDFE /* Specie.swift in Sources */,
 				5115240C21BC72D900FDC466 /* StarWarsApi.swift in Sources */,
 				5115241521BC8F1700FDC466 /* InfoDetailViewController.swift in Sources */,
 				5115244321C2207D00FDC466 /* FavoriteTabCoordinator.swift in Sources */,
 				5112325B21C75DD800D6C6DD /* FavoritesTabModule.swift in Sources */,
+				510EDFCD21D2159E008FBDFE /* People.swift in Sources */,
 				5115244121C2200E00FDC466 /* InfoTabCoordinator.swift in Sources */,
 				5115241F21BC900A00FDC466 /* InfoListViewModel.swift in Sources */,
 				5115241D21BC8FF500FDC466 /* InfoChoiceViewModel.swift in Sources */,
@@ -737,6 +757,7 @@
 				5112325F21CB535E00D6C6DD /* URLSession+Rx.swift in Sources */,
 				5115240F21BC87E300FDC466 /* Constants.swift in Sources */,
 				5115241121BC8E8300FDC466 /* InfoListViewController.swift in Sources */,
+				510EDFCF21D215A8008FBDFE /* Planet.swift in Sources */,
 				5115242B21BCCB4800FDC466 /* Theme.swift in Sources */,
 				5115242121BC901D00FDC466 /* InfoDetailViewModel.swift in Sources */,
 				5115242321BC903C00FDC466 /* FavoritesListViewModel.swift in Sources */,
@@ -745,14 +766,17 @@
 				5115241721BC8F2C00FDC466 /* FavoritesListViewController.swift in Sources */,
 				5115243321BCDC1100FDC466 /* Coordinator+ViewController.swift in Sources */,
 				5112325D21C75DF000D6C6DD /* SettingsTabModule.swift in Sources */,
+				510EDFCB21D2158A008FBDFE /* Film.swift in Sources */,
 				5115242921BCBD6800FDC466 /* BindableType.swift in Sources */,
 				5115241321BC8EF900FDC466 /* InfoChoiceViewController.swift in Sources */,
+				510EDFC921D21569008FBDFE /* Starship.swift in Sources */,
 				5112325721C75D6300D6C6DD /* InfoViewCell.swift in Sources */,
 				5112325921C75DBE00D6C6DD /* InfoTabModule.swift in Sources */,
 				5115241921BC8F5900FDC466 /* FavoritesDetailViewController.swift in Sources */,
 				5115242721BC906500FDC466 /* SettingsViewModel.swift in Sources */,
 				5115244521C2209C00FDC466 /* SettingsTabCoordinator.swift in Sources */,
 				5112324921C757D000D6C6DD /* Injectable.swift in Sources */,
+				510EDFC721D21556008FBDFE /* Vehicle.swift in Sources */,
 				5115243121BCDBE500FDC466 /* AppCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

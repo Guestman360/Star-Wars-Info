@@ -13,7 +13,7 @@ public class Observable<Element> : ObservableType {
     /// Type of elements in sequence.
     public typealias E = Element
     
-    init() {
+    public init() {
 #if TRACE_RESOURCES
         let _ = Resources.incrementTotal()
 #endif

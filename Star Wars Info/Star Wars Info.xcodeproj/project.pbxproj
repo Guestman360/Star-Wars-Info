@@ -9,6 +9,18 @@
 /* Begin PBXBuildFile section */
 		0503C06911C92F711A475AB4 /* Pods_Star_Wars_Info.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D58AAB52F66C007259A19C7 /* Pods_Star_Wars_Info.framework */; };
 		065EC4742160A4F9442C1B97 /* Pods_Star_Wars_InfoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F59CC612EE16FA092DEA8B0 /* Pods_Star_Wars_InfoTests.framework */; };
+		510EDFC721D21556008FBDFE /* Vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 510EDFC621D21556008FBDFE /* Vehicle.swift */; };
+		510EDFC921D21569008FBDFE /* Starship.swift in Sources */ = {isa = PBXBuildFile; fileRef = 510EDFC821D21569008FBDFE /* Starship.swift */; };
+		510EDFCB21D2158A008FBDFE /* Film.swift in Sources */ = {isa = PBXBuildFile; fileRef = 510EDFCA21D2158A008FBDFE /* Film.swift */; };
+		510EDFCD21D2159E008FBDFE /* People.swift in Sources */ = {isa = PBXBuildFile; fileRef = 510EDFCC21D2159E008FBDFE /* People.swift */; };
+		510EDFCF21D215A8008FBDFE /* Planet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 510EDFCE21D215A8008FBDFE /* Planet.swift */; };
+		510EDFD121D215C0008FBDFE /* Specie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 510EDFD021D215C0008FBDFE /* Specie.swift */; };
+		5112324921C757D000D6C6DD /* Injectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5112324821C757D000D6C6DD /* Injectable.swift */; };
+		5112325721C75D6300D6C6DD /* InfoViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5112325621C75D6300D6C6DD /* InfoViewCell.swift */; };
+		5112325921C75DBE00D6C6DD /* InfoTabModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5112325821C75DBE00D6C6DD /* InfoTabModule.swift */; };
+		5112325B21C75DD800D6C6DD /* FavoritesTabModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5112325A21C75DD800D6C6DD /* FavoritesTabModule.swift */; };
+		5112325D21C75DF000D6C6DD /* SettingsTabModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5112325C21C75DF000D6C6DD /* SettingsTabModule.swift */; };
+		5112325F21CB535E00D6C6DD /* URLSession+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5112325E21CB535E00D6C6DD /* URLSession+Rx.swift */; };
 		5115240C21BC72D900FDC466 /* StarWarsApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5115240B21BC72D900FDC466 /* StarWarsApi.swift */; };
 		5115240F21BC87E300FDC466 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5115240E21BC87E300FDC466 /* Constants.swift */; };
 		5115241121BC8E8300FDC466 /* InfoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5115241021BC8E8300FDC466 /* InfoListViewController.swift */; };
@@ -31,8 +43,14 @@
 		5115243321BCDC1100FDC466 /* Coordinator+ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5115243221BCDC1100FDC466 /* Coordinator+ViewController.swift */; };
 		5115243521BCDC2400FDC466 /* TransitionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5115243421BCDC2400FDC466 /* TransitionType.swift */; };
 		5115243721BCE2FC00FDC466 /* UINavigationController+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5115243621BCE2FC00FDC466 /* UINavigationController+Rx.swift */; };
+		5115243921BDF65B00FDC466 /* TabCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5115243821BDF65B00FDC466 /* TabCoordinator.swift */; };
+		5115243F21C21AC700FDC466 /* Storyboard+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5115243E21C21AC700FDC466 /* Storyboard+Extensions.swift */; };
+		5115244121C2200E00FDC466 /* InfoTabCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5115244021C2200E00FDC466 /* InfoTabCoordinator.swift */; };
+		5115244321C2207D00FDC466 /* FavoriteTabCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5115244221C2207D00FDC466 /* FavoriteTabCoordinator.swift */; };
+		5115244521C2209C00FDC466 /* SettingsTabCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5115244421C2209C00FDC466 /* SettingsTabCoordinator.swift */; };
+		5115244821C2228F00FDC466 /* Favorites.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5115244721C2228F00FDC466 /* Favorites.storyboard */; };
+		5115244A21C222A100FDC466 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5115244921C222A100FDC466 /* Settings.storyboard */; };
 		519E7BD921BB55D9002518EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 519E7BD821BB55D9002518EB /* AppDelegate.swift */; };
-		519E7BDB21BB55D9002518EB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 519E7BDA21BB55D9002518EB /* ViewController.swift */; };
 		519E7BDE21BB55D9002518EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 519E7BDC21BB55D9002518EB /* Main.storyboard */; };
 		519E7BE021BB55DB002518EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 519E7BDF21BB55DB002518EB /* Assets.xcassets */; };
 		519E7BE321BB55DB002518EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 519E7BE121BB55DB002518EB /* LaunchScreen.storyboard */; };
@@ -61,6 +79,18 @@
 /* Begin PBXFileReference section */
 		2D58AAB52F66C007259A19C7 /* Pods_Star_Wars_Info.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Star_Wars_Info.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F59CC612EE16FA092DEA8B0 /* Pods_Star_Wars_InfoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Star_Wars_InfoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		510EDFC621D21556008FBDFE /* Vehicle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vehicle.swift; sourceTree = "<group>"; };
+		510EDFC821D21569008FBDFE /* Starship.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Starship.swift; sourceTree = "<group>"; };
+		510EDFCA21D2158A008FBDFE /* Film.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Film.swift; sourceTree = "<group>"; };
+		510EDFCC21D2159E008FBDFE /* People.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = People.swift; sourceTree = "<group>"; };
+		510EDFCE21D215A8008FBDFE /* Planet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Planet.swift; sourceTree = "<group>"; };
+		510EDFD021D215C0008FBDFE /* Specie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Specie.swift; sourceTree = "<group>"; };
+		5112324821C757D000D6C6DD /* Injectable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Injectable.swift; sourceTree = "<group>"; };
+		5112325621C75D6300D6C6DD /* InfoViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewCell.swift; sourceTree = "<group>"; };
+		5112325821C75DBE00D6C6DD /* InfoTabModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoTabModule.swift; sourceTree = "<group>"; };
+		5112325A21C75DD800D6C6DD /* FavoritesTabModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesTabModule.swift; sourceTree = "<group>"; };
+		5112325C21C75DF000D6C6DD /* SettingsTabModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTabModule.swift; sourceTree = "<group>"; };
+		5112325E21CB535E00D6C6DD /* URLSession+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLSession+Rx.swift"; sourceTree = "<group>"; };
 		5115240B21BC72D900FDC466 /* StarWarsApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarsApi.swift; sourceTree = "<group>"; };
 		5115240E21BC87E300FDC466 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		5115241021BC8E8300FDC466 /* InfoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoListViewController.swift; sourceTree = "<group>"; };
@@ -83,9 +113,15 @@
 		5115243221BCDC1100FDC466 /* Coordinator+ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Coordinator+ViewController.swift"; sourceTree = "<group>"; };
 		5115243421BCDC2400FDC466 /* TransitionType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionType.swift; sourceTree = "<group>"; };
 		5115243621BCE2FC00FDC466 /* UINavigationController+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Rx.swift"; sourceTree = "<group>"; };
+		5115243821BDF65B00FDC466 /* TabCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabCoordinator.swift; sourceTree = "<group>"; };
+		5115243E21C21AC700FDC466 /* Storyboard+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Storyboard+Extensions.swift"; sourceTree = "<group>"; };
+		5115244021C2200E00FDC466 /* InfoTabCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoTabCoordinator.swift; sourceTree = "<group>"; };
+		5115244221C2207D00FDC466 /* FavoriteTabCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteTabCoordinator.swift; sourceTree = "<group>"; };
+		5115244421C2209C00FDC466 /* SettingsTabCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTabCoordinator.swift; sourceTree = "<group>"; };
+		5115244721C2228F00FDC466 /* Favorites.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Favorites.storyboard; sourceTree = "<group>"; };
+		5115244921C222A100FDC466 /* Settings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
 		519E7BD521BB55D9002518EB /* Star Wars Info.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Star Wars Info.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		519E7BD821BB55D9002518EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		519E7BDA21BB55D9002518EB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		519E7BDD21BB55D9002518EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		519E7BDF21BB55DB002518EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		519E7BE221BB55DB002518EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -146,6 +182,120 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		5112324A21C7595700D6C6DD /* InfoTab */ = {
+			isa = PBXGroup;
+			children = (
+				5115244021C2200E00FDC466 /* InfoTabCoordinator.swift */,
+				519E7BDC21BB55D9002518EB /* Main.storyboard */,
+				5112325821C75DBE00D6C6DD /* InfoTabModule.swift */,
+				5112324D21C7599600D6C6DD /* View Controllers */,
+			);
+			path = InfoTab;
+			sourceTree = "<group>";
+		};
+		5112324B21C7596100D6C6DD /* FavoritesTab */ = {
+			isa = PBXGroup;
+			children = (
+				5115244221C2207D00FDC466 /* FavoriteTabCoordinator.swift */,
+				5115244721C2228F00FDC466 /* Favorites.storyboard */,
+				5112325A21C75DD800D6C6DD /* FavoritesTabModule.swift */,
+				5112325121C75A6E00D6C6DD /* View Controllers */,
+			);
+			path = FavoritesTab;
+			sourceTree = "<group>";
+		};
+		5112324C21C7596C00D6C6DD /* SettingsTab */ = {
+			isa = PBXGroup;
+			children = (
+				5115244421C2209C00FDC466 /* SettingsTabCoordinator.swift */,
+				5115244921C222A100FDC466 /* Settings.storyboard */,
+				5112325C21C75DF000D6C6DD /* SettingsTabModule.swift */,
+				5112325221C75A7700D6C6DD /* View Controllers */,
+			);
+			path = SettingsTab;
+			sourceTree = "<group>";
+		};
+		5112324D21C7599600D6C6DD /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5112324E21C759A800D6C6DD /* Info Choice */,
+				5112324F21C759EF00D6C6DD /* Info List */,
+				5112325021C759F700D6C6DD /* Info Detail */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		5112324E21C759A800D6C6DD /* Info Choice */ = {
+			isa = PBXGroup;
+			children = (
+				5115241221BC8EF900FDC466 /* InfoChoiceViewController.swift */,
+				5115241C21BC8FF500FDC466 /* InfoChoiceViewModel.swift */,
+			);
+			path = "Info Choice";
+			sourceTree = "<group>";
+		};
+		5112324F21C759EF00D6C6DD /* Info List */ = {
+			isa = PBXGroup;
+			children = (
+				5115241021BC8E8300FDC466 /* InfoListViewController.swift */,
+				5115241E21BC900A00FDC466 /* InfoListViewModel.swift */,
+			);
+			path = "Info List";
+			sourceTree = "<group>";
+		};
+		5112325021C759F700D6C6DD /* Info Detail */ = {
+			isa = PBXGroup;
+			children = (
+				5115241421BC8F1700FDC466 /* InfoDetailViewController.swift */,
+				5115242021BC901D00FDC466 /* InfoDetailViewModel.swift */,
+			);
+			path = "Info Detail";
+			sourceTree = "<group>";
+		};
+		5112325121C75A6E00D6C6DD /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5112325421C75A9300D6C6DD /* Favorites List */,
+				5112325321C75A8200D6C6DD /* Favorites Detail */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		5112325221C75A7700D6C6DD /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5112325521C75ADD00D6C6DD /* Settings */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		5112325321C75A8200D6C6DD /* Favorites Detail */ = {
+			isa = PBXGroup;
+			children = (
+				5115241821BC8F5900FDC466 /* FavoritesDetailViewController.swift */,
+				5115242421BC905100FDC466 /* FavoritesDetailViewModel.swift */,
+			);
+			path = "Favorites Detail";
+			sourceTree = "<group>";
+		};
+		5112325421C75A9300D6C6DD /* Favorites List */ = {
+			isa = PBXGroup;
+			children = (
+				5115241621BC8F2C00FDC466 /* FavoritesListViewController.swift */,
+				5115242221BC903C00FDC466 /* FavoritesListViewModel.swift */,
+			);
+			path = "Favorites List";
+			sourceTree = "<group>";
+		};
+		5112325521C75ADD00D6C6DD /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				5115241A21BC8F6B00FDC466 /* SettingsViewController.swift */,
+				5115242621BC906500FDC466 /* SettingsViewModel.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
 		5115240A21BC723D00FDC466 /* Api */ = {
 			isa = PBXGroup;
 			children = (
@@ -154,14 +304,23 @@
 			path = Api;
 			sourceTree = "<group>";
 		};
-		5115240D21BC87AD00FDC466 /* Helper Files */ = {
+		5115240D21BC87AD00FDC466 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
 				5115242821BCBD6800FDC466 /* BindableType.swift */,
 				5115240E21BC87E300FDC466 /* Constants.swift */,
 				5115242A21BCCB4800FDC466 /* Theme.swift */,
+				5112324821C757D000D6C6DD /* Injectable.swift */,
 			);
-			path = "Helper Files";
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		5115244621C2226500FDC466 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				5112325621C75D6300D6C6DD /* InfoViewCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		519E7BCC21BB55D8002518EB = {
@@ -193,13 +352,11 @@
 				5115240A21BC723D00FDC466 /* Api */,
 				519E7C0E21BBAA2C002518EB /* Assets */,
 				519E7C0621BBA918002518EB /* Coordinator */,
-				519E7C0C21BBA9AB002518EB /* Controllers */,
+				519E7C0C21BBA9AB002518EB /* Tabs */,
 				519E7C0721BBA92B002518EB /* Extensions */,
-				5115240D21BC87AD00FDC466 /* Helper Files */,
+				5115240D21BC87AD00FDC466 /* Utils */,
 				519E7C0B21BBA97B002518EB /* Model */,
 				519E7C0A21BBA96E002518EB /* View */,
-				519E7C0921BBA943002518EB /* View Models */,
-				519E7BDA21BB55D9002518EB /* ViewController.swift */,
 			);
 			path = "Star Wars Info";
 			sourceTree = "<group>";
@@ -230,6 +387,7 @@
 				5115243021BCDBE500FDC466 /* AppCoordinator.swift */,
 				5115243221BCDC1100FDC466 /* Coordinator+ViewController.swift */,
 				5115243421BCDC2400FDC466 /* TransitionType.swift */,
+				5115243821BDF65B00FDC466 /* TabCoordinator.swift */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
@@ -238,62 +396,46 @@
 			isa = PBXGroup;
 			children = (
 				5115243621BCE2FC00FDC466 /* UINavigationController+Rx.swift */,
+				5115243E21C21AC700FDC466 /* Storyboard+Extensions.swift */,
+				5112325E21CB535E00D6C6DD /* URLSession+Rx.swift */,
 			);
 			path = Extensions;
-			sourceTree = "<group>";
-		};
-		519E7C0921BBA943002518EB /* View Models */ = {
-			isa = PBXGroup;
-			children = (
-				5115241C21BC8FF500FDC466 /* InfoChoiceViewModel.swift */,
-				5115241E21BC900A00FDC466 /* InfoListViewModel.swift */,
-				5115242021BC901D00FDC466 /* InfoDetailViewModel.swift */,
-				5115242221BC903C00FDC466 /* FavoritesListViewModel.swift */,
-				5115242421BC905100FDC466 /* FavoritesDetailViewModel.swift */,
-				5115242621BC906500FDC466 /* SettingsViewModel.swift */,
-			);
-			path = "View Models";
 			sourceTree = "<group>";
 		};
 		519E7C0A21BBA96E002518EB /* View */ = {
 			isa = PBXGroup;
 			children = (
-				519E7C0D21BBA9B9002518EB /* Cells */,
+				5115244621C2226500FDC466 /* Cells */,
 			);
-			path = View;
+			name = View;
 			sourceTree = "<group>";
 		};
 		519E7C0B21BBA97B002518EB /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				510EDFCA21D2158A008FBDFE /* Film.swift */,
+				510EDFCC21D2159E008FBDFE /* People.swift */,
+				510EDFCE21D215A8008FBDFE /* Planet.swift */,
+				510EDFD021D215C0008FBDFE /* Specie.swift */,
+				510EDFC821D21569008FBDFE /* Starship.swift */,
+				510EDFC621D21556008FBDFE /* Vehicle.swift */,
 			);
-			path = Model;
+			name = Model;
 			sourceTree = "<group>";
 		};
-		519E7C0C21BBA9AB002518EB /* Controllers */ = {
+		519E7C0C21BBA9AB002518EB /* Tabs */ = {
 			isa = PBXGroup;
 			children = (
-				5115241221BC8EF900FDC466 /* InfoChoiceViewController.swift */,
-				5115241021BC8E8300FDC466 /* InfoListViewController.swift */,
-				5115241421BC8F1700FDC466 /* InfoDetailViewController.swift */,
-				5115241621BC8F2C00FDC466 /* FavoritesListViewController.swift */,
-				5115241821BC8F5900FDC466 /* FavoritesDetailViewController.swift */,
-				5115241A21BC8F6B00FDC466 /* SettingsViewController.swift */,
+				5112324A21C7595700D6C6DD /* InfoTab */,
+				5112324B21C7596100D6C6DD /* FavoritesTab */,
+				5112324C21C7596C00D6C6DD /* SettingsTab */,
 			);
-			path = Controllers;
-			sourceTree = "<group>";
-		};
-		519E7C0D21BBA9B9002518EB /* Cells */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Cells;
+			path = Tabs;
 			sourceTree = "<group>";
 		};
 		519E7C0E21BBAA2C002518EB /* Assets */ = {
 			isa = PBXGroup;
 			children = (
-				519E7BDC21BB55D9002518EB /* Main.storyboard */,
 				519E7BDF21BB55DB002518EB /* Assets.xcassets */,
 				519E7BE121BB55DB002518EB /* LaunchScreen.storyboard */,
 				519E7BE421BB55DB002518EB /* Info.plist */,
@@ -422,7 +564,9 @@
 			files = (
 				519E7BE321BB55DB002518EB /* LaunchScreen.storyboard in Resources */,
 				519E7BE021BB55DB002518EB /* Assets.xcassets in Resources */,
+				5115244821C2228F00FDC466 /* Favorites.storyboard in Resources */,
 				519E7BDE21BB55D9002518EB /* Main.storyboard in Resources */,
+				5115244A21C222A100FDC466 /* Settings.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -548,6 +692,7 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-Star Wars Info/Pods-Star Wars Info-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Action/Action.framework",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/NSObject+Rx/NSObject_Rx.framework",
 				"${BUILT_PRODUCTS_DIR}/Reachability/Reachability.framework",
@@ -555,9 +700,11 @@
 				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
 				"${BUILT_PRODUCTS_DIR}/RxRealm/RxRealm.framework",
 				"${BUILT_PRODUCTS_DIR}/RxRealmDataSources/RxRealmDataSources.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/Then/Then.framework",
 				"${BUILT_PRODUCTS_DIR}/Unbox/Unbox.framework",
 			);
@@ -567,6 +714,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Action.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NSObject_Rx.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reachability.framework",
@@ -574,9 +722,11 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxRealm.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxRealmDataSources.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Then.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Unbox.framework",
 			);
@@ -592,29 +742,45 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				510EDFD121D215C0008FBDFE /* Specie.swift in Sources */,
 				5115240C21BC72D900FDC466 /* StarWarsApi.swift in Sources */,
 				5115241521BC8F1700FDC466 /* InfoDetailViewController.swift in Sources */,
+				5115244321C2207D00FDC466 /* FavoriteTabCoordinator.swift in Sources */,
+				5112325B21C75DD800D6C6DD /* FavoritesTabModule.swift in Sources */,
+				510EDFCD21D2159E008FBDFE /* People.swift in Sources */,
+				5115244121C2200E00FDC466 /* InfoTabCoordinator.swift in Sources */,
 				5115241F21BC900A00FDC466 /* InfoListViewModel.swift in Sources */,
 				5115241D21BC8FF500FDC466 /* InfoChoiceViewModel.swift in Sources */,
-				519E7BDB21BB55D9002518EB /* ViewController.swift in Sources */,
+				5115243921BDF65B00FDC466 /* TabCoordinator.swift in Sources */,
 				5115241B21BC8F6B00FDC466 /* SettingsViewController.swift in Sources */,
 				5115243521BCDC2400FDC466 /* TransitionType.swift in Sources */,
 				5115242D21BCD83300FDC466 /* Coordinator.swift in Sources */,
 				5115242521BC905100FDC466 /* FavoritesDetailViewModel.swift in Sources */,
 				5115243721BCE2FC00FDC466 /* UINavigationController+Rx.swift in Sources */,
 				519E7BD921BB55D9002518EB /* AppDelegate.swift in Sources */,
+				5112325F21CB535E00D6C6DD /* URLSession+Rx.swift in Sources */,
 				5115240F21BC87E300FDC466 /* Constants.swift in Sources */,
 				5115241121BC8E8300FDC466 /* InfoListViewController.swift in Sources */,
+				510EDFCF21D215A8008FBDFE /* Planet.swift in Sources */,
 				5115242B21BCCB4800FDC466 /* Theme.swift in Sources */,
 				5115242121BC901D00FDC466 /* InfoDetailViewModel.swift in Sources */,
 				5115242321BC903C00FDC466 /* FavoritesListViewModel.swift in Sources */,
 				5115242F21BCDB7600FDC466 /* CoordinatorType.swift in Sources */,
+				5115243F21C21AC700FDC466 /* Storyboard+Extensions.swift in Sources */,
 				5115241721BC8F2C00FDC466 /* FavoritesListViewController.swift in Sources */,
 				5115243321BCDC1100FDC466 /* Coordinator+ViewController.swift in Sources */,
+				5112325D21C75DF000D6C6DD /* SettingsTabModule.swift in Sources */,
+				510EDFCB21D2158A008FBDFE /* Film.swift in Sources */,
 				5115242921BCBD6800FDC466 /* BindableType.swift in Sources */,
 				5115241321BC8EF900FDC466 /* InfoChoiceViewController.swift in Sources */,
+				510EDFC921D21569008FBDFE /* Starship.swift in Sources */,
+				5112325721C75D6300D6C6DD /* InfoViewCell.swift in Sources */,
+				5112325921C75DBE00D6C6DD /* InfoTabModule.swift in Sources */,
 				5115241921BC8F5900FDC466 /* FavoritesDetailViewController.swift in Sources */,
 				5115242721BC906500FDC466 /* SettingsViewModel.swift in Sources */,
+				5115244521C2209C00FDC466 /* SettingsTabCoordinator.swift in Sources */,
+				5112324921C757D000D6C6DD /* Injectable.swift in Sources */,
+				510EDFC721D21556008FBDFE /* Vehicle.swift in Sources */,
 				5115243121BCDBE500FDC466 /* AppCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

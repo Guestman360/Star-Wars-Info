@@ -74,15 +74,18 @@ struct StarWarsApi: StarWarsApiProtocol {
     // MARK: - generic request for requesting data
     static private func request<T: Any>(address: Address, parameters: [String: String] = [:]) -> Observable<T> {
         return Observable.create { observer in
-            var comps = URLComponents(string: address.url.absoluteString)!
-            comps.queryItems = parameters.map(URLQueryItem.init)
+            let comps = URLComponents(string: address.url.absoluteString)!
+            print("Here's the comps: \(comps)")
+            //comps.queryItems = parameters.map(URLQueryItem.init)
             let url = try! comps.asURL()
-
+            print("Here's the url: \(url.absoluteString)")
             let request = Alamofire.request(url.absoluteString,
                                             method: .get,
                                             parameters: Parameters(),
                                             encoding: URLEncoding.httpBody)
             request.responseJSON { response in
+                print("error: \(response.error == nil)")
+                //dump(response)
                 guard response.error == nil, let data = response.data,
                     let json = try? JSONSerialization.jsonObject(with: data, options: []) as? T, let result = json else {
                         observer.onError(Errors.requestFailed)

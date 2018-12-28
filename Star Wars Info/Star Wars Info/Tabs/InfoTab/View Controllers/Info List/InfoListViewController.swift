@@ -20,11 +20,11 @@ class InfoListViewController: UIViewController, Injectable {
     
     // fixed issue by going cmd+ctrl observable and adding public init
     // https://stackoverflow.com/questions/51364620/getting-initializer-is-inaccessible-due-to-internal-protection-level?rq=1
-    var selectedCategoryData = BehaviorSubject<[JSONObject]>(value: [])
-    
-    var selectedObserver: Observable<[JSONObject]> {
-        return selectedCategoryData.asObserver()
-    }
+//    var selectedCategoryData = BehaviorSubject<[JSONObject]>(value: [])
+//
+//    var selectedObserver: Observable<[JSONObject]> {
+//        return selectedCategoryData.asObserver()
+//    }
     
     let rx_disposeBag = DisposeBag()
     
@@ -33,7 +33,7 @@ class InfoListViewController: UIViewController, Injectable {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        print("Category data: \(String(describing: try? selectedCategoryData.value().count))")
+        //print("Category data: \(String(describing: try? selectedCategoryData.value().count))")
         // Do any additional setup after loading the view.
         // Take category selection and make request to fetch all data, sort alpahbetically (with A-Z sections)
         // Bind tableview to response
@@ -42,7 +42,19 @@ class InfoListViewController: UIViewController, Injectable {
     
     func bindViewModel() {
         
+        // Run activity indicator
+        
+        // films is placeholder for now, pass in var from previous screen
+        _ = viewModel.requestCategoryData(of: .all)
+        
+        viewModel.requestData
+            .asObservable()
+            .bind(to: tableView.rx.items(cellIdentifier: InfoViewCell.reuseID,
+                                         cellType: InfoViewCell.self)) { row, element, cell in
+            //cell.populate(from: )
+        }.disposed(by: rx_disposeBag)
     }
     
+    // Create helper function to determine model type to use, use switch statement?
 
 }

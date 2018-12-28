@@ -10,7 +10,7 @@ import Foundation
 import RealmSwift
 import RxDataSources
 
-class People: Object {
+class People: Object, Codable {
     
     @objc dynamic var name: String = ""
     @objc dynamic var height: String = ""

@@ -10,7 +10,7 @@ import Foundation
 import RealmSwift
 import RxDataSources
 
-class Planet: Object {
+class Planet: Object, Codable {
     
     @objc dynamic var name: String = ""
     @objc dynamic var rotation_period: Int = 0

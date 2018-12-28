@@ -10,7 +10,7 @@ import Foundation
 import RealmSwift
 import RxDataSources
 
-class Specie: Object {
+class Specie: Object, Codable {
     
     @objc dynamic var title: String = ""
     @objc dynamic var episode_id: Int = 0

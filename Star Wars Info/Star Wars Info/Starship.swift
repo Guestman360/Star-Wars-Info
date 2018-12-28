@@ -10,7 +10,7 @@ import Foundation
 import RealmSwift
 import RxDataSources
 
-class Starship: Object {
+class Starship: Object, Codable {
     
     @objc dynamic var name: String = ""
     @objc dynamic var model: Int = 0

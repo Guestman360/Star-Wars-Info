@@ -96,10 +96,10 @@ extension InfoChoiceViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
         // take text and match it to enum and get url to perform request there
-        let categorySelected = self.loadSubCategory(from: categories[indexPath.row])
-        let categoryJson = StarWarsApi.requestInfo(ofType: categorySelected)
-        
-        let infoListViewController = storyboard!.instantiateViewController(withIdentifier: "InfoListViewController") as! InfoListViewController
+//        let categorySelected = self.loadSubCategory(from: categories[indexPath.row])
+//        let categoryJson = StarWarsApi.requestInfo(ofType: categorySelected)
+//        
+//        let infoListViewController = storyboard!.instantiateViewController(withIdentifier: "InfoListViewController") as! InfoListViewController
         
         // Run activity indicator here?
         
@@ -107,10 +107,10 @@ extension InfoChoiceViewController: UITableViewDelegate, UITableViewDataSource {
         
         // Run starwars api request and flatmap it and set data value to
         
-        if let json = categoryJson as? BehaviorSubject<[JSONObject]> {
-            infoListViewController.selectedCategoryData = json
-            navigationController!.pushViewController(infoListViewController, animated: true)
-        }
+//        if let json = categoryJson as? BehaviorSubject<[JSONObject]> {
+//            infoListViewController.selectedCategoryData = json
+//            navigationController!.pushViewController(infoListViewController, animated: true)
+//        }
     }
     
 }
